@@ -41,6 +41,16 @@ def incr_fn():
 
     return str(value)
 
+@app.route('/fn/ttl_fn', methods=['POST'])
+def ttl_fn():
+    data = json.loads(request.data.decode('utf-8'))
+    print(data)
+    key, value, ttl = data['key'], data['value'], data['ttl']
+    
+    ds.set_ttl(key, value, ttl)
+    
+    return 'OK'
+
 def main(host='0.0.0.0', port=5000):
     app.run(host=host, port=port)
 

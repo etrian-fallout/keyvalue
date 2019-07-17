@@ -14,7 +14,7 @@ class DataStore:
             self.data_map[key] = (float_value, expire_time)
 
             return float_value
-        except Error:
+        except :
             return None
     
     def is_key(self, key):

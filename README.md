@@ -1,5 +1,6 @@
 # keyvalue
 ``python key value storage! ``
+[![Build Status](https://travis-ci.org/etrian-fallout/keyvalue.svg?branch=master)](https://travis-ci.org/etrian-fallout/keyvalue)
 
 # Installation
 

@@ -16,7 +16,7 @@ pip3 install -r reqirements.txt
 | get | 조회 | key|
 | del | 삭제 | key|
 | incr | 1 증가 | key|
-
+| ttl | ttl 저장 | key, value, time|
 
 ## Running
 1. run server
@@ -56,6 +56,14 @@ incr cnt
 5. del cnt
 ```
 del cnt
+```
+
+6. ttl 
+```
+ttl time live 10
+# 10초후 
+get time 
+# None
 ```
 
 ## dir
